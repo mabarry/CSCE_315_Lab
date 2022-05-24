@@ -1,13 +1,13 @@
 h1 {
-    color:grey;
+    color:navy;
 }
 
 .blue_overline_text {
-    color:blue;
+    color:maroon;
     text-decoration: overline;
 }
 
 #red_underline_text {
-    color: red;
-    text-decoration: underline;
+    color: maroon;
+    text-decoration: overline;
 }
