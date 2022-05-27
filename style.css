@@ -1,13 +1,87 @@
+body {
+    background: url("headshot-cropped.jpg") repeat center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    line-height: 1.88889;
+}
+
 h1 {
-    color:navy;
+    color: rgb(253, 253, 238);
+    font-family: Verdana;
+    font-size: 80px;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
 }
 
-.blue_overline_text {
-    color:maroon;
-    text-decoration: overline;
+h1:hover {
+    color: rgb(109, 155, 255);
+    font-size: 85px;
 }
 
-#red_underline_text {
-    color: maroon;
-    text-decoration: overline;
+h2 {
+    font-family: sans-serif;
+    font-size: xx-large;
 }
+
+h3 {
+    color: rgb(21, 33, 64);
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+.image {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.screenshot {
+    text-align: center;
+}
+
+p {
+    color:black;
+    font-family: Verdana, sans-serif;
+    text-align: justify;
+}
+
+p.screenshot {
+    font-family: sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+
+.below-image {
+    background: url("blue-gif.gif");
+    background-size: cover;
+    border-style: solid;
+    border-color: rgb(253, 253, 238);
+    border-width: 5px;
+    padding: 15px 30px;
+    margin-left: .5%;
+    margin-right: .5%;
+    margin-bottom: 1%;
+    color: black;
+}
+
+a:link, a:visited {
+    background-color: #7db7ff;
+    color: rgb(253, 253, 238);
+    border-style: solid;
+    border-color: rgb(253, 253, 238);
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding: 10px 50px;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover {
+    background-color: #328eff;
+    border-color: rgb(0, 204, 255);
+  }
+
+  a:active {
+    background-color: #00b3ff;
+    border-color: white;
+  }
