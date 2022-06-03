@@ -73,7 +73,31 @@ p.screenshot {
     color: black;
 }
 
-a.button:link, a.button:visited {
+.button {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #7db7ff;
+    border-style: none;
+    border-color: rgb(253, 253, 238);
+    border-width: 5px;
+    color: rgb(253, 253, 238);
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.374);
+    transition: transform 1s;
+}
+
+.button:hover {
+    height: 100px;
+    width: 200px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.374);
+    transform: translate(0, 2);
+}
+
+a.link_button:link, a.link_button:visited {
     background-color: #7db7ff;
     color: rgb(253, 253, 238);
     border-style: solid;
@@ -87,12 +111,16 @@ a.button:link, a.button:visited {
     transition: transform .5s;
   }
   
-a.button:hover {
+a.link_button:hover {
     transform: rotate(15deg);
 }
 
-a.button:active {
+a.link_button:active {
     width: 100px;
     background-color: #00b3ff;
     border-color: white;
+}
+
+.hiking, .arrow, .tree {
+    display: none;
 }
