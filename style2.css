@@ -1,36 +1,105 @@
 body {
-    background: url("mountain_range.jpg") repeat center;
+    background: url("mountain_gif.gif") repeat center;
     background-color: rgb(31, 31, 108);
     background-size: 100% 100%;
     background-position: center top;
     background-repeat: cover;
     background-attachment: fixed;
-    line-height: 1.5;
+    color: rgb(60, 39, 28);
 }
 
-h1, .image, h2, .landing, .portfolio, .qualifications, .service {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+h1 {
+    margin-left: 15%;
+    margin-top: 15%;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 250%;
+    color: rgb(60, 39, 28);
+    text-shadow: 2px 0 0 rgb(255, 232, 214), -2px 0 0 rgb(255, 232, 214), 0 2px 0 rgb(255, 232, 214), 0 -2px 0 rgb(255, 232, 214), 1px 1px rgb(255, 232, 214), -1px -1px 0 rgb(255, 232, 214), 1px -1px 0 rgb(255, 232, 214), -1px 1px 0 rgb(255, 232, 214); 
+}
+
+h2.intro {
+    margin-left: 15%;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(60, 39, 28);
+    text-shadow: 2px 0 0 rgb(255, 232, 214), -2px 0 0 rgb(255, 232, 214), 0 2px 0 rgb(255, 232, 214), 0 -2px 0 rgb(255, 232, 214), 1px 1px rgb(255, 232, 214), -1px -1px 0 rgb(255, 232, 214), 1px -1px 0 rgb(255, 232, 214), -1px 1px 0 rgb(255, 232, 214); 
+
+}
+
+.image {
+    width: 400px;
+    height: 500px;
+    margin-left: 15%;
+    filter: drop-shadow(10px 10px 10px rgba(60, 39, 28, 0.521));
+    border-style: ridge;
+    border-width: 15px;
+    border-color: rgb(110, 73, 53);
+}
+
+.body-text {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background: url(wood.jpg);
+    border-style: ridge;
+    border-width: 15px;
+    border-color: rgb(110, 73, 53);
+    width: 60%;
+    
+}
+
+.landing, .portfolio, .qualifications, .service {
+    filter: drop-shadow(10px 10px 10px rgba(60, 39, 28, 0.521));
+    background-position: center;
+    font-family: "ink free";
+    font-weight: bold;
     font-size: 20;
     align-items: center;
-    background: url("wood.jpg") repeat center;
+    background: url("paper.jpg") repeat center;
     background-size: 100% 100%;
     background-position: center top;
     background-repeat: repeat-y;
+    margin-left: 5%;
+    margin-top: 5%;
+    line-height: 1.5;
     gap: 50px;
     width: 55%;
     padding: 20px;
-    border: 5px outset rgb(119, 82, 59);
-    margin: 0;
-    transition: width 2s, transform .5s;
+    margin-bottom: none;
 
 }
 
-h1:hover, .image:hover, h2:hover, .landing:hover, .portfolio:hover, .qualifications:hover, .service:hover {
-    transition: rotate(90deg);
-}
-
-a.button:link, a.button:visited {
+.button {
+    border: #ffffff;
     background: url("wood.jpg") repeat center;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    left: 43%;
+    top: 80%;
+    box-shadow: 10px 10px rgba(60, 39, 28, 0.7);
+    transition: recolor 1s;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(60, 39, 28);
+    text-shadow: 2px 0 0 rgb(255, 232, 214), -2px 0 0 rgb(255, 232, 214), 0 2px 0 rgb(255, 232, 214), 0 -2px 0 rgb(255, 232, 214), 1px 1px rgb(255, 232, 214), -1px -1px 0 rgb(255, 232, 214), 1px -1px 0 rgb(255, 232, 214), -1px 1px 0 rgb(255, 232, 214); 
+}
+
+.button:hover {
+    border: #ffffff;
+    border-width: 2px;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    box-shadow: 5px 5px rgba(60, 39, 28, 0.7);
+}
+
+a.link_button:link, a.link_button:visited {
+    background: url("wood.jpg") repeat center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 0 0 rgb(255, 232, 214), -2px 0 0 rgb(255, 232, 214), 0 2px 0 rgb(255, 232, 214), 0 -2px 0 rgb(255, 232, 214), 1px 1px rgb(255, 232, 214), -1px -1px 0 rgb(255, 232, 214), 1px -1px 0 rgb(255, 232, 214), -1px 1px 0 rgb(255, 232, 214); 
+    color: rgb(60, 39, 28);
     background-size: 100% 100%;
     background-position: center top;
     background-repeat: repeat-y;
@@ -42,15 +111,32 @@ a.button:link, a.button:visited {
     box-shadow: 5px 5px black;
   }
   
-a.button:hover {
+a.link_button:hover {
     background-color: #ffffff;
     border-color: rgb(255, 255, 255);
 }
 
-a.button:active {
+a.link_button:active {
     background-color: #ffffff;
     border-color: rgb(242, 255, 0);
 }
 
+.hiking {
+    position: absolute;
+    left: 42%;
+    top: 190%;
+}
+
+.arrow {
+    position: absolute;
+    left: 42%;
+    top: 490%;
+}
+
+.tree {
+    position: absolute;
+    left: 52%;
+    top: 740%;
+}
 
 
