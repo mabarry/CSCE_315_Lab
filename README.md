@@ -1,1 +1,1 @@
-# CSCE_315_Lab
+# CSCE_315_Project_1
